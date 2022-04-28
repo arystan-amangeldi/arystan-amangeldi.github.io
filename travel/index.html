@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mashat Hills</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo_size.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -13,16 +14,14 @@
     <header id="header">
         <div class="header-wrapper">
             <div class="header-flex">
-                <a href="http://mashathills/index.html">
-                    <img src="images/logo.png" alt="" class="web-logo"/>
-                </a>
+                <a class="logo" href="#banner">Sky<span class="logo-span">line</span>Resort</a>
                 <nav>
                     <ul>
                         <li>
                             <a href="#banner">Home</a>
                         </li>
                         <li>
-                            <a href="#welcome">About Us</a>
+                            <a href="#about">About Us</a>
                         </li>
                         <li>
                             <a href="#weather">Weather</a>
@@ -50,9 +49,9 @@
                             <h1>Find Your Perfect Place<br/>To Stay</h1>
                             <div class="button-container">
                                 <button class="primary">Discover Now</button>
-                                <a href="https://youtube.com">
+                                <a href="https://youtube.com" target="_blank">
                                     <i class="fa-solid fa-circle-play"></i>
-                                    <span>Смотреть Видео</span>
+                                    <span>Watch Video</span>
                                 </a>
                             </div>
                         </div>
@@ -107,6 +106,44 @@
                 </div>
             </div>
         </section>
+        <!-- О Нас -->
+        <section id="about">
+            <div class="about-wrapper">
+                <div class="inner">
+                    <div class="about-flex">
+                        <div class="about-text-container">
+                            <div class="about-text">
+                                <h2>Who We Are?</h2>
+                                <div class="about-details">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sapiente beatae, debitis.</p>
+                                </div>
+                            </div>
+                            <div class="about-subtitle">
+                                <div class="about-subtitle-left">
+                                    <h3 class="about-title">Explore More About Our SkylineResort</h3>
+                                    <p class="about-subtitle-text">Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Dignissimos quam odit, repudiandae debitis dolorum magni corporis architecto aut alias voluptatem, ducimus quos veniam libero recusandae nulla ipsa quasi, obcaecati rerum, illum magnam natus doloremque ea nisi a veritatis. Vitae, molestias, voluptatem! Autem asperiores eum consequuntur quas suscipit molestiae adipisci nisi ad iusto.</p>
+                                    <p class="about-subtitle-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veritatis cupiditate, quasi numquam impedit voluptatem doloribus blanditiis nam voluptatum perferendis optio beatae cum, laborum, earum doloremque. Esse, dolorem. Natus, eum.</p>
+                                </div>
+                                <div class="about-subtitle-right">
+                                    <div class="about-image">
+                                        <img src="https://images.unsplash.com/photo-1615039666131-964929ad0f1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Resort&Villas">
+                                        <div class="about-image-text">
+                                            <p>Resort & Villas</p>
+                                        </div>
+                                    </div>
+                                    <div class="about-image">
+                                        <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80" alt="Travel">
+                                        <div class="about-image-text">
+                                            <p>Travel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--Погода-->
         <section id="weather">
             <div class="weather-wrapper">
@@ -119,18 +156,14 @@
                         <div class="weather-today__block">
                             <div class="weather-today__date">
                                 <div class="weather-today__title">Today</div>
-                                <div class="weather-today__date">14.04.2022</div>
+                                <div id="date"></div>
                             </div>
                             <div class="weather-today__now">
                                 <div class="weather-today__now-icon">
-                                    <img src="./images/weather-icon/snow-white.png" alt="cloud">
+                                    <img src="./images/weather-icon/clouds-white.png" alt="cloud">
                                 </div>
                                 <div class="weather-today__now-temp">
-                                    <p>
-                                        -
-                                        <span>22</span>
-                                        °
-                                    </p>
+                                    <p>+<span>22</span>°</p>
                                 </div>
                             </div>
                             <div class="weather-today__index">
@@ -144,7 +177,7 @@
                                 </div>
                                 <div class="weather-today__index-item">
                                     <div class="weather-today__index-icon">
-                                        <img src="./images/weather-icon/sun-white.png" alt="">
+                                        <img src="./images/weather-icon/sun-white.png" alt="ultraviolet">
                                     </div>
                                     <div class="weather-today__index-text">
                                         Index<br>3 of 10
@@ -152,7 +185,7 @@
                                 </div>
                                 <div class="weather-today__index-item">
                                     <div class="weather-today__index-icon">
-                                        <img src="./images/weather-icon/humidity-white.png" alt="">
+                                        <img src="./images/weather-icon/humidity-white.png" alt="humidity">
                                     </div>
                                     <div class="weather-today__index-text">
                                         Humidity<br>73%
@@ -160,7 +193,7 @@
                                 </div>
                                 <div class="weather-today__index-item">
                                     <div class="weather-today__index-icon">
-                                        <img src="./images/weather-icon/sunrise-white.png" alt="">
+                                        <img src="./images/weather-icon/sunrise-white.png" alt="sunrise">
                                     </div>
                                     <div class="weather-today__index-text">
                                         Sunrise<br>7:00 am
@@ -168,7 +201,7 @@
                                 </div>
                                 <div class="weather-today__index-item">
                                     <div class="weather-today__index-icon">
-                                        <img src="./images/weather-icon/sunset-white.png" alt="">
+                                        <img src="./images/weather-icon/sunset-white.png" alt="sunset">
                                     </div>
                                     <div class="weather-today__index-text">
                                         Sunset<br>5:45 pm
@@ -184,33 +217,45 @@
                                 <div class="weather-time__period-time-row">
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">02:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/night-wind.png" alt="night-wind">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-15°</div>
                                             <div class="weather-time__period-time-temperature-to">-19°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">12 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">05:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/night-wind.png" alt="night-wind">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-16°</div>
                                             <div class="weather-time__period-time-temperature-to">-21°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">10 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
@@ -221,33 +266,45 @@
                                 <div class="weather-time__period-time-row">
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">08:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/clouds.png" alt="clouds">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-15°</div>
                                             <div class="weather-time__period-time-temperature-to">-19°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">12 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">11:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/clouds.png" alt="clouds">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-20°</div>
                                             <div class="weather-time__period-time-temperature-to">-25°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">10 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
@@ -258,33 +315,45 @@
                                 <div class="weather-time__period-time-row">
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">14:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/stormy-weather.png" alt="stormy-weather">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-22°</div>
                                             <div class="weather-time__period-time-temperature-to">-27°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">12 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">17:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/stormy-weather.png" alt="stormy-weather">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-20°</div>
                                             <div class="weather-time__period-time-temperature-to">-26°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">10 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
@@ -295,33 +364,45 @@
                                 <div class="weather-time__period-time-row">
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">20:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/partly-cloudy-day.png" alt="partly-cloudy-day">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-16°</div>
                                             <div class="weather-time__period-time-temperature-to">-22°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">12 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
                                     <div class="weather-time__period-time-item">
                                         <div class="weather-time__period-time-time">23:00</div>
-                                        <div class="weather-time__period-time-icon"></div>
+                                        <div class="weather-time__period-time-icon">
+                                            <img src="./images/weather-icon/partly-cloudy-day.png" alt="partly-cloudy-day">
+                                        </div>
                                         <div class="weather-time__period-time-temperature">
                                             <div class="weather-time__period-time-temperature-from">-18°</div>
                                             <div class="weather-time__period-time-temperature-to">-24°</div>
                                         </div>
                                         <div class="weather-time__period-time-wind">
-                                            <div class="weather-time__period-time-wind-icon"></div>
+                                            <div class="weather-time__period-time-wind-icon">
+                                                <img src="./images/weather-icon/wind.png" alt="wind">
+                                            </div>
                                             <div class="weather-time__period-time-wind-text">10 mph</div>
                                         </div>
                                         <div class="weather-time__period-time-moisture">
-                                            <div class="weather-time__period-time-moisture-icon"></div>
+                                            <div class="weather-time__period-time-moisture-icon">
+                                                <img src="./images/weather-icon/humidity.png" alt="humidity">
+                                            </div>
                                             <div class="weather-time__period-time-moisture-text">73%</div>
                                         </div>
                                     </div>
@@ -344,12 +425,17 @@
                 <div class="gallery-container">
                     <div class="gallery-row">
                         <div class="gallery-card">
+                            <a href="https://instagram.com" target="_blank" class="instagram-text">
+                                <i>@SkylineResort</i>
+                            </a>
+                        </div>
+                        <div class="gallery-card">
                             <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1631941150945-837cb81fc7e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Fireplace">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1595770205769-84b55f75a053?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Nature"></a>
                             </div>
                             <div class="gallery-tags">
                                 <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
+                                    <li class="gallery-tag">Fireplace</li>
                                     <li class="gallery-tag">Summer</li>
                                     <li class="gallery-tag">Friends</li>
                                     <li class="gallery-tag">Happy</li>
@@ -358,40 +444,26 @@
                         </div>
                         <div class="gallery-card">
                             <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1595770205769-84b55f75a053?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Nature">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1625868744573-e6f5904443d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80" alt="Flamingo"></a>
                             </div>
                             <div class="gallery-tags">
                                 <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
-                                    <li class="gallery-tag">Friends</li>
-                                    <li class="gallery-tag">Happy</li>
+                                    <li class="gallery-tag">Flamingo</li>
+                                    <li class="gallery-tag">Water</li>
+                                    <li class="gallery-tag">Animal</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="gallery-card">
                             <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Nature">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1518860308377-800f02d5498a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Resort"></a>
                             </div>
                             <div class="gallery-tags">
                                 <ul class="gallery-tags-flex">
+                                    <li class="gallery-tag">Resort</li>
                                     <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
-                                    <li class="gallery-tag">Friends</li>
-                                    <li class="gallery-tag">Happy</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1647891938250-954addeb9c51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="People">
-                            </div>
-                            <div class="gallery-tags">
-                                <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
-                                    <li class="gallery-tag">Friends</li>
-                                    <li class="gallery-tag">Happy</li>
+                                    <li class="gallery-tag">Bath</li>
+                                    <li class="gallery-tag">Travel</li>
                                 </ul>
                             </div>
                         </div>
@@ -399,12 +471,24 @@
                     <div class="gallery-row">
                         <div class="gallery-card">
                             <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Wood">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1507041957456-9c397ce39c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Wood"></a>
                             </div>
                             <div class="gallery-tags">
                                 <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
+                                    <li class="gallery-tag">Forest</li>
+                                    <li class="gallery-tag">Green</li>
+                                    <li class="gallery-tag">Nature</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gallery-card">
+                            <div class="gallery-img">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1496256654245-8f3d0ef3bebe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Nature"></a>
+                            </div>
+                            <div class="gallery-tags">
+                                <ul class="gallery-tags-flex">
+                                    <li class="gallery-tag">Flowers</li>
+                                    <li class="gallery-tag">Pink</li>
                                     <li class="gallery-tag">Friends</li>
                                     <li class="gallery-tag">Happy</li>
                                 </ul>
@@ -412,40 +496,25 @@
                         </div>
                         <div class="gallery-card">
                             <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1496256654245-8f3d0ef3bebe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Nature">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1602774895312-f002b8f2f33b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Pool"></a>
                             </div>
                             <div class="gallery-tags">
                                 <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
-                                    <li class="gallery-tag">Friends</li>
-                                    <li class="gallery-tag">Happy</li>
+                                    <li class="gallery-tag">Pool</li>
+                                    <li class="gallery-tag">House</li>
+                                    <li class="gallery-tag">Time Alone</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="gallery-card">
                             <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1602774895312-f002b8f2f33b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="Pool">
+                                <a href="https://instagram.com" target="_blank"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="People"></a>
                             </div>
                             <div class="gallery-tags">
                                 <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
-                                    <li class="gallery-tag">Friends</li>
-                                    <li class="gallery-tag">Happy</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="gallery-card">
-                            <div class="gallery-img">
-                                <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="People">
-                            </div>
-                            <div class="gallery-tags">
-                                <ul class="gallery-tags-flex">
-                                    <li class="gallery-tag">Relax</li>
-                                    <li class="gallery-tag">Summer</li>
-                                    <li class="gallery-tag">Friends</li>
-                                    <li class="gallery-tag">Happy</li>
+                                    <li class="gallery-tag">Drinks</li>
+                                    <li class="gallery-tag">Fruit</li>
+                                    <li class="gallery-tag">Fresh</li>
                                 </ul>
                             </div>
                         </div>
@@ -458,20 +527,62 @@
             <div class="contact-wrapper">
                 <div class="inner">
                     <div class="contact-text">
-                        <span class="section-name">Get in touch</span>
-                        <h2>Followe us on the social media</h2>
+                        <span class="section-name">Questions?</span>
+                        <h2>Get In Touch With Us</h2>
                     </div>
-                    <div class="contact-form">
-                        <div class="contact-container">
-                            <div class="input-container">
-                                <input type="text" placeholder="Ваш E-mail" class="input-container__text">
+                    <div class="contact-container">
+                        <div class="contact-options">
+                            <div class="contact-single">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-map-location-dot"></i>
+                                </div>
+                                <h2>Our Office:</h2>
+                                <p>Mangilik El, 8/1, Nur-Sultan, 010000, Kazakhstan</p>
                             </div>
-                            <div class="input-button">
-                                Отправить
+                            <div class="contact-single">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-mobile"></i>
+                                </div>
+                                <h2>Contact Number:</h2>
+                                <p>+7 (777) 123 45 56</p>
+                            </div>
+                            <div class="contact-single">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <h2>Email Us:</h2>
+                                <p>skylineresort@gmail.com</p>
+                            </div>
+                            <div class="contact-social">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                </ul>
                             </div>
                         </div>
+                        <div class="contact-form">
+                            <form>
+                                <div class="input-container">
+                                    <input type="text" name="name" placeholder="Name" class="form-control" required="required">
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" name="email" placeholder="Email" class="form-control" required="required">
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" name="subject" placeholder="Subject" class="form-control" required="required">
+                                </div>
+                                <div class="input-container">
+                                    <textarea rows="6" name="message" placeholder="Your Message" class="form-control" required="required"></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button type="submit" class="contact-btn">Send Now</button>
+                                    <button type="reset" class="contact-btn reset">Reset</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <p style="text-align: center;">Ваши данные будут в безопасности</p>
                 </div>
             </div>
         </section>
@@ -483,8 +594,9 @@
                 <div class="footer-flex">
                     <div class="description">
                         <div class="footer-container">
-                            <img src="./images/logo.webp" alt="">
+                            <p><a class="logo" href="#banner">SkylineResort</a></p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ex temporibus consequuntur quo tempora cumque totam fugit harum qui minus natus obcaecati quae nam dolorum, provident aliquam debitis tenetur fugiat.</p>
+                            <p>Made By <span class="made-by">Arystan A.T</span></p>
                         </div>
                     </div>
                     <div class="links">
@@ -492,7 +604,7 @@
                             <h4>Quick Links</h4>
                             <ul>
                                 <li><a href="#banner">Home</a></li>
-                                <li><a href="#welcome">About Us</a></li>
+                                <li><a href="#about">About Us</a></li>
                                 <li><a href="#weather">Weather</a></li>
                                 <li><a href="#gallery">Gallery</a></li>
                                 <li><a href="#contact">Contact</a></li>
