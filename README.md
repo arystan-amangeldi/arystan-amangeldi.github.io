@@ -1,1 +1,0 @@
-# arystan-amangeldi.github.io
