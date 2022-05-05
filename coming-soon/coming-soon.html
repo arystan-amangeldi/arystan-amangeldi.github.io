@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Dosis', sans-serif;
+        }
+
+        header {
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))), url('../images/coming-soon-background.jpg');
+            background-image: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/coming-soon-background.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/coming-soon-background.jpg');
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            letter-spacing: 15px;
+        }
+
+        hr {
+            width: 50%;
+            height: 3px;
+            background-color: #fff;
+            margin: 30px auto;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            h1 {
+                font-size: 40px;
+                letter-spacing: 12px;
+            }
+
+            hr {
+                width: 50%;
+                height: 3px;
+                background-color: #fff;
+                margin: 20px auto;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <p>Building Fascinating Website</p>
+            <h1>COMING SOON</h1>
+            <hr>
+            <p id="launch"></p>
+        </div>
+    </header>
+    <script>
+        const countDownDate = new Date('June 17, 2022 00:00:00').getTime();
+        var countDownTime = setInterval(() => {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+            var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+            var seconds = Math.floor(distance % (1000 * 60) / 1000);
+
+            document.getElementById("launch").innerHTML = days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's';
+
+            if (distance < 0) {
+                clearInterval(countDownTime);
+                document.getElementById("launch").innerHTML = "EXPIRED";
+            }
+        });
+    </script>
+</body>
+
+</html>
